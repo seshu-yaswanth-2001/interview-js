@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .div {
+        min-height: 100px;
+        min-width: 100px;
+        padding: 30px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Event Capturing and bubbling -->
+    <div id="grandParent" class="div">
+      <div id="parent" class="div">
+        <div id="child" class="div"></div>
+      </div>
+    </div>
+
+    <!-- Event Delegation -->
+    <div id="container">
+      <ul>
+        <li id="laptop">laptop</li>
+        <li id="camera">Camera</li>
+        <li id="Mobiles">Mobiles</li>
+      </ul>
+    </div>
+
+    <div id="container-two">
+      <input type="text" data-upperCase />
+      <input type="text" />
+      <input type="text" />
+    </div>
+
+    <script src="./core-concepts/eventDelegation.js"></script>
+
+    <!--  -->
+  </body>
+</html>

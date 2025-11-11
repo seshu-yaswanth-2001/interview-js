@@ -74,6 +74,17 @@ var count = 100;
 }
 console.log(count); // ✅ 100 (outer variable)
 
+// but let and const declared in global scope cannot shadow var in block
+
+// let apple = 20;
+
+// {
+//   var apple = 40;
+//   console.log(apple);
+// }
+
+// // the above is wrong identifier error
+
 /**
  * TDZ and Shadowing in Real Scenarios
  * If you accidentally reference a shadowed variable before its declaration, you’ll hit the TDZ:
@@ -101,3 +112,5 @@ for (let i = 1; i <= 3; i++) {
   setTimeout(() => console.log(i), 1000);
 }
 // Output: 1, 2, 3 (each has its own block-scoped i)
+
+//
